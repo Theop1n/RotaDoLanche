@@ -1,0 +1,329 @@
+.xablaua{
+
+	font-family: 'Zen Tokyo Zoo', cursive;
+	font-size: 80px;
+	text-align: center;
+	color: darkred;
+	text-shadow: 5px 5px 3px #FF0000, 5px 5px 3px #000088;
+}
+
+body{
+
+}
+
+#logo{
+
+	width: 30%
+}
+
+#pinheiro{
+
+	width: 5%;
+	
+
+}
+
+header {
+	background: #FF7E00;
+	padding: 20px 0;
+}
+
+
+header {
+	background: #FF7E00;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+
+
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+
+}
+
+nav a:hover{
+
+	color:#FFFFFF ;
+	text-decoration: underline;
+	font-size: 25px;
+	transition: 0.45s;
+}
+
+#xeex{
+
+	width: 70%;
+	display: inline-block;
+}
+
+.sla{
+
+	width: 50%;
+}
+
+.av p {
+
+	
+	color: 	#000000;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+footer {
+
+	text-align: center;
+	background: #FF7E00;
+}
+
+footer .xablau{
+
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 2px;
+
+}
+
+footer .linksa{
+
+	font-size: 28px;
+	font-weight: bold;
+	font-weight: italic;
+	font-family: 'Zen Tokyo Zoo', cursive;
+
+
+}
+
+footer .links{
+
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	
+
+
+}
+
+footer .links:hover {
+	color: red;
+	font-size: 30;
+	text-decoration: underline;
+	transition: 0.45s;
+
+}
+.pfooter{
+
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.circle{
+
+	height: 60px;
+	width: 60px;
+	border: 8px solid #FFE3B335;
+	border-left-color: #15CDCA;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	align-self: center;
+
+}
+
+@keyframes spin{
+
+	to {transform: rotate(360deg);}
+}
+
+.banner {
+	width:100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	color: rgba(0, 0, 0,0.8);
+
+}
+
+
+
+
+.titulo-principal:first-letter{
+
+	font-weight: bold;
+
+}
+
+
+
+.principal{
+
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+	
+}
+
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.combos {
+	width: 170px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.mapa{
+
+	padding: 3em 0;
+	background: radial-gradient(red,#FF7E33,white);
+
+
+}
+.mapa p{
+
+	margin: 0 0 2em;
+	text-align: center;
+} 
+
+.beneficios{
+
+	padding: 3em 0;
+	background: #FF7E33;
+	box-shadow: inset 0 0 20px #ff0000;
+
+
+}
+
+
+.conteudo-beneficios{
+
+	width: 640px;
+	margin: 0 auto;
+
+}
+
+.lista-beneficios{
+
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens{
+
+	line-height: 1.5;
+}
+
+.itens:nth-child(1n){
+
+	font-weight: bold;
+}
+
+.itens:before{
+
+	content: "🍔";
+}
+
+.imagem-hamburguer {
+	width: 40%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: -10px -10px 10px 0px #111111;
+}
+
+.imagem-hamburguer:hover {
+	opacity: 0.3;
+	box-shadow: 10px 10px 10px #111111;
+}
+
+
+.video{
+
+	width: 560px;
+	margin: 2em auto;
+
+}
+.comingSoon{
+
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 400px){ 
+
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+
+		width: auto;
+	}
+
+	h1{
+
+		text-align: left;
+		max-width: 300px;
+
+	}
+
+	nav{
+
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-hamburguer{
+
+		width: 100%;
+		opacity: 1;
+		box-shadow: 0px 0px 0px;
+	}
+
+	.imagem-hamburguer:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 0px #111111;
+	}
+
+	.video{
+
+		width: 50%;
+		height: 50%;
+	}
+
+	p{
+
+		padding: 10px;
+	}
+}

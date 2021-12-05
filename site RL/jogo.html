@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+    <html>
+        <meta charset="utf-8">
+        <head>
+
+          
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="jogo.css">
+
+        </head>
+        
+        <body>
+
+            <header>
+                <div class="caixa" >
+                    <ul>
+                    <h1 class="centralizar"><img src="pinheiro.png"width="10%"></h1>
+                    
+                    <p class="centro">Pine INC.</p>
+                    
+                    </ul>
+                </div>
+
+            </header>
+
+
+
+    <p>Olá espero que goste do jogo da Velha :)</p>
+    <p>use a paleta de cores e ganhe do seu adversário com sua cor favorita</p>
+
+    <br>
+    <br>
+
+
+   <p> "aperte D para limpar a tela"</p>
+    <canvas width="301" height="301"></canvas>
+    <input type="color">
+
+    <script>
+
+    	var paleta = document.querySelector('input');
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        var limpar = 68
+
+        pincel.fillStyle = 'white';
+        pincel.fillRect(0, 0, 400, 400);
+
+        var desenha = false;
+
+        function desenhaCirculo(evento) {
+
+            if(desenha) {
+                var x = evento.pageX - tela.offsetLeft;
+                var y = evento.pageY - tela.offsetTop;
+                pincel.fillStyle = paleta.value; 
+                pincel.beginPath();
+                pincel.arc(x, y, 10, 0, 2 * 3.14);
+                pincel.fill();
+            }
+            console.log(x + ',' + y);
+        }
+
+        tela.onmousemove = desenhaCirculo;
+
+
+        tela.onmousedown = function() {
+
+            desenha = true;
+        }
+
+
+         tela.onmouseup = function() {
+
+            desenha = false;
+        }
+
+
+
+
+
+        function desenhaJogoVelha() {
+
+      
+
+            pincel.fillStyle = 'white';
+            pincel.fillRect(0, 0, 100, 100);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(0, 0, 100, 100);
+            pincel.fillStyle = 'white';
+            pincel.fillRect(100, 0, 100, 100);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(100, 0, 100, 100);
+            pincel.fillStyle = 'white';
+            pincel.fillRect(200, 0, 100, 100);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(200, 0, 100, 100);
+            pincel.fillStyle = 'white';
+            pincel.fillRect(0, 100, 100, 100);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(0, 100, 100, 100);
+            pincel.fillStyle = 'white';
+            pincel.fillRect(0, 200, 100, 100);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(0, 200, 100, 100);
+            pincel.fillStyle = 'white';
+            pincel.fillRect(100, 200, 100, 100);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(100, 200, 100, 100);
+            pincel.fillStyle = 'white';
+            pincel.fillRect(200, 200, 100, 100);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(200, 200, 100, 100);
+            pincel.fillStyle = 'white';
+            pincel.fillRect(200, 100, 200, 100);
+            pincel.strokeStyle = 'black';
+            pincel.strokeRect(200, 100, 100, 100);
+    }
+            
+
+            function limpaTela() {
+
+
+
+                pincel.clearRect(0, 0, 400, 400);
+        }
+
+              function atualizaTela(){
+
+                limpaTela();
+                desenhaJogoVelha();
+        }
+
+            function leDoTeclado(evento) {
+
+                if (evento.keyCode == limpar) {
+
+                    atualizaTela();
+
+
+                }
+
+       }
+
+    desenhaJogoVelha();
+    document.onkeydown = leDoTeclado 
+    desenhaJogoVelha();
+    desenhaCirculo();
+
+
+      </script>
+      <footer>
+          <img src="pinheiro.png" width="5%" >
+          <p class="footer" >Pine INC.</p>
+
+
+      </footer>
+    </body>
+</html>

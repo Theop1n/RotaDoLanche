@@ -1,0 +1,165 @@
+#logo{
+
+	width: 30%
+}
+
+header {
+	background: #FF7E00;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+
+	color:#FFFFFF ;
+	text-decoration: underline;
+	font-size: 25px;
+	transition: 0.45s;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 5px solid #000000;
+	border-radius: 50px;
+
+}
+
+.produtos a{
+
+	color: #000000;
+	text-decoration: none;
+}
+
+.produtos li:hover{
+
+	border-color: #FF7E00;
+	border-radius: 90px;
+	transition: 1s;
+
+}
+
+.produtos li:active{
+
+	border-color: #FFFFFF;
+	transition: 1s;
+}
+
+.produtos li:hover h2{
+
+	font-size: 30px;
+	text-decoration:none;
+	color: #111111;
+	transition: 1s;
+}
+
+.produtos li:hover p{
+
+	font-size: 30px;
+	
+}
+
+.produtos h2 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+	transition: 1s;
+}
+
+.produtos h3 {
+
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FF0000;
+}
+
+.produtos h3:hover{
+
+	font-size: 30px;
+	text-decoration: underline;
+	transition: 1s;
+}
+
+footer {
+
+	text-align: center;
+	background: #FF7E00;
+}
+
+footer .xablau{
+
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+footer .linksa{
+
+	font-size: 28px;
+	font-weight: bold;
+	font-weight: italic;
+
+
+}
+
+footer .links{
+
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+
+
+}
+
+footer .links:hover {
+	color: green;
+	font-size: 30;
+	text-decoration: underline;
+
+}
+

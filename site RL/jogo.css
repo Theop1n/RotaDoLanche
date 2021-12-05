@@ -1,0 +1,74 @@
+body{
+
+	background:#F5DEB3
+}
+
+header{
+
+	background: #000000;
+}
+
+.centralizar{
+
+	text-align: center;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+
+
+.centro{
+
+	color: #DD1111;
+	text-align: center;
+}
+
+
+
+nav {
+	position: absolute;
+	top: 90px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+p{
+	margin-top: 5px;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+
+}
+
+footer{
+
+	background:#000000 ;
+	margin-top: 275px;
+	text-align: center;
+
+}
+
+.footer{
+
+	text-align: center;
+	color: #DD1111
+}

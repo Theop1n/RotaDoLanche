@@ -1,0 +1,197 @@
+#logo{
+
+	width: 30%
+}
+
+header {
+	background: #FF7E00;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+
+	color:#FFFFFF ;
+	text-decoration: underline;
+	font-size: 25px;
+	transition: 0.45s;
+}
+
+main{
+
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+form{
+
+	margin:  40px 0;
+	color: #000000;
+}
+
+form label, form legend{
+
+	display: block;
+	font-size: 22px;
+	margin: 0 0 10px
+
+}
+
+.input-padrao{
+	display: block;
+	margin: 0 0 20px ;
+	padding: 10px 25px;
+	color: #000000;
+	width: 50%;
+}
+
+
+
+.checkbox{
+
+	margin: 20px 0;
+}
+
+.enviar{
+
+	width: 30%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer ;
+
+}
+
+.enviar:hover{
+
+	background: orangered;
+	transform: rotate(360deg) scale(1.2);
+}
+
+table{
+
+	margin: 20px 0 40px;
+}
+
+.divisao{
+
+	width: 15%;
+	background:#FF7E00 ;
+
+	font-weight: bold;
+}
+
+thead{
+
+	background:#FF7E00 ;
+	color: white;
+	font-weight: bold;
+}
+
+.dfj{
+
+	text-align: left;
+}
+
+td, th{
+
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+tfoot tr td{
+
+	border: none;
+}
+
+footer {
+
+	text-align: center;
+	background: #FF7E00;
+}
+
+footer .xablau{
+
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+footer .linksa{
+
+	font-size: 28px;
+	font-weight: bold;
+	font-weight: italic;
+
+
+}
+
+footer .links{
+
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+
+
+}
+
+footer .links:hover {
+	color: green;
+	font-size: 30;
+	text-decoration: underline;
+
+}
+
+@media screen and(max-width 480px){
+
+	.caixa{
+
+		width: auto;
+	}
+
+	h1{
+
+		width: 90%;
+		text-align: center;
+	}
+
+	.nav{
+
+		position: static;
+	}
+}
+
